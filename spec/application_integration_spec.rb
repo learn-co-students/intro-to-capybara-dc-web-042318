@@ -11,7 +11,7 @@ describe "GET '/' - Greeting Form" do
   it 'has a greeting form with a user_name field' do
     visit '/'
 
-    expect(page).to have_selector("form")
+    expect(page).to have_selector("form") #you are asking the page ""Hey, do you have HTML that matches the following selector?""
     expect(page).to have_field(:user_name)
   end
 end
